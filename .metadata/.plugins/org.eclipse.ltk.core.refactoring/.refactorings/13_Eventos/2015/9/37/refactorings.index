@@ -1,0 +1,3 @@
+1441798463351	Rename type 'Listener'
+1441870816525	Extract local variable 'changeListener'
+1441870881575	Extract local variable 'changeListenerInterna'

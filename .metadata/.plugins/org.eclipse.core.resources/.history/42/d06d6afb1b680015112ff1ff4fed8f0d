@@ -1,0 +1,55 @@
+package com.noticias.servicio.rest;
+
+import java.util.Collection;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.websocket.server.PathParam;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+@Path("/Noticia")
+public class NoticiasServicioRest {
+
+	private Map<Integer, Noticia> tablaNoticia = new HashMap<>();
+	
+	private int i = 1; //Secuencia
+	
+	public NoticiasServicioRest() {
+		alta(new Noticia("Extra", "Extra", new Date()));
+		alta(new Noticia("Bombazo", "Bombazo", new Date()));
+		alta(new Noticia("Noticion", "Noticion", new Date()));
+		alta(new Noticia("Me aburro", "Me aburro", new Date()));
+		alta(new Noticia("Fin del mundo", "Fin del mundo", new Date()));
+	}
+	
+	//Noticias_rest_service/rest/Noticia
+	@GET
+	@Produces({MediaType.APPLICATION_JSON})
+	public Collection<Noticia> consultar(){
+		return tablaNoticia.values();
+	}
+	
+	//Noticias_rest_service/rest/Noticia/123
+	@GET
+	@Path("/{key}")
+	@Produces({MediaType.APPLICATION_JSON})
+	public Noticia consultar(@PathParam("key") Integer id){
+		return tablaNoticia.get(id);
+	}
+	
+	@POST
+	@Consumes({MediaType.APPLICATION_JSON})
+	public void alta(Noticia noticia){
+		tablaNoticia.put(i++, noticia);
+	}
+	
+	
+}
+

@@ -1,0 +1,5 @@
+package com.noticias.servicio.rest;
+
+public class NoticiasServicioRest {
+
+}

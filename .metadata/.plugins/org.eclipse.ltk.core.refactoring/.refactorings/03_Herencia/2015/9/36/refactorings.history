@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;03_Herencia/src/com.ejemplo.herencia&apos;&#x0A;- Original project: &apos;03_Herencia&apos;&#x0A;- Destination element: &apos;03_Herencia/src/com.ejemplo.herencia&apos;&#x0A;- Original elements:&#x0A;     Direccion.java&#x0A;     Persona.java&#x0A;- Update references to refactored element" description="Move compilation units" destination="/src&lt;com.ejemplo.herencia" element1="/src&lt;{Direccion.java" element2="/src&lt;{Persona.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" log="/src&lt;&#x09;/src&lt;com.ejemplo.herencia" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1441276847360" units="2" version="1.0"/>
+</session>

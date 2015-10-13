@@ -1,0 +1,86 @@
+package com.noticias.servicio.rest;
+
+import java.util.Collection;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.MediaType;
+
+@Path("Noticia")
+public class NoticiasServicioRest {
+
+	private Map<Integer, Noticia> tablaNoticia = new HashMap<>();
+	
+	private int i = 1; //Secuencia
+	
+	public NoticiasServicioRest() {
+		alta(new Noticia("Extra", "Extra", new Date()));
+		alta(new Noticia("Bombazo", "Bombazo", new Date()));
+		alta(new Noticia("Noticion", "Noticion", new Date()));
+		alta(new Noticia("Me aburro", "Me aburro", new Date()));
+		alta(new Noticia("Fin del mundo", "Fin del mundo", new Date()));
+	}
+	
+	//Noticias_rest_service/rest/Noticia
+	/*@GET
+	@Produces({MediaType.APPLICATION_JSON})
+	public Collection<Noticia> consultar(){
+		return tablaNoticia.values();
+	}*/
+	
+	//Noticias_rest_service/rest/Noticia?titulo=Extra Extra!
+	/*@GET
+	@Produces({MediaType.APPLICATION_JSON})
+	public Collection<Noticia> consultar(){
+		return tablaNoticia.values();
+	}*/
+	
+	//Noticias_rest_service/rest/Noticia/123
+	@GET
+	@Path("/{key}")
+	@Produces({MediaType.APPLICATION_JSON})
+	public Noticia consultar(@PathParam("key") String id){
+		return tablaNoticia.get(Integer.parseInt(id));
+	}
+	
+	/*@POST
+	@Consumes({MediaType.APPLICATION_JSON})*/
+	public void alta(Noticia noticia){
+		noticia.setId(i++);
+		tablaNoticia.put(noticia.getId(), noticia);
+	}
+	
+	/*@PUT
+	@Consumes({MediaType.APPLICATION_JSON})
+	public void modificacion(Noticia noticia){
+		tablaNoticia.put(noticia.getId(), noticia);
+	}*/
+	
+	/*@PUT
+	@Path("/{key}")
+	@Consumes({MediaType.APPLICATION_JSON})
+	public void modificacion(Noticia noticia, @PathParam("key") Integer id){
+		tablaNoticia.put(id, noticia);
+	}*/
+	
+	/*@DELETE
+	@Path("/{key}")
+	public void borrar(@PathParam("key") int id){
+		tablaNoticia.remove(id);
+	}
+	
+	@DELETE
+	public void borrar(){
+		tablaNoticia.clear();
+	}*/
+}

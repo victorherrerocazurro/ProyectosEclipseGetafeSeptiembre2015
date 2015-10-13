@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=03_Herencia/src&lt;com.ejemplo.herencia{Persona.java[Persona" modifiers="1" timestamp="1441352544000"/>
+<typeInfo handle="=01_Java/\/Library\/Java\/JavaVirtualMachines\/jdk1.7.0_51.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang(Object.class[Object" modifiers="33" timestamp="1387422821000"/>
+<typeInfo handle="=04_Calculadora/src&lt;com.ejercicio.calculadora{OperacionDosOperandos.java[OperacionDosOperandos" modifiers="1025" timestamp="1441361040000"/>
+<typeInfo handle="=09_Interfaces/\/Library\/Java\/JavaVirtualMachines\/jdk1.7.0_51.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang(String.class[String" modifiers="49" timestamp="1387422821000"/>
+<typeInfo handle="=09_Interfaces/\/Library\/Java\/JavaVirtualMachines\/jdk1.7.0_51.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1387422821000"/>
+<typeInfo handle="=09_Interfaces/src&lt;com.ejemplo.intefaces{Comercial.java[Comercial" modifiers="513" timestamp="1441615130000"/>
+<typeInfo handle="=10_Ejercicio/src&lt;com.ejercicio.herramientas{Electrico.java[Electrico" modifiers="513" timestamp="1441627589000"/>
+<typeInfo handle="=11_Colecciones/\/Library\/Java\/JavaVirtualMachines\/jdk1.7.0_51.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang(Comparable.class[Comparable" modifiers="1537" timestamp="1387422821000"/>
+<typeInfo handle="=11_Colecciones/\/Library\/Java\/JavaVirtualMachines\/jdk1.7.0_51.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.util(Comparator.class[Comparator" modifiers="1537" timestamp="1387422821000"/>
+<typeInfo handle="=12_Excepciones/\/Library\/Java\/JavaVirtualMachines\/jdk1.7.0_51.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang(Exception.class[Exception" modifiers="33" timestamp="1387422821000"/>
+<typeInfo handle="=13_Eventos/src&lt;com.ejemplo.eventos{Componente.java[Componente" modifiers="513" timestamp="1441868955000"/>
+<typeInfo handle="=13_Eventos/src&lt;com.ejemplo.eventos{Evento.java[Evento" modifiers="513" timestamp="1441798076000"/>
+<typeInfo handle="=13_Eventos/src&lt;com.ejemplo.eventos{ChangeListener.java[ChangeListener" modifiers="513" timestamp="1441799363000"/>
+<typeInfo handle="=14_Contexto/src&lt;com.ejemplo.contexto{Activity.java[Activity" modifiers="1" timestamp="1441967965000"/>
+</typeInfoHistroy>
